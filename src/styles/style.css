@@ -1,1 +1,23 @@
-@layer reset
+@layer reset, init, typography, hamburger, design;
+
+@import url(normalize.css) layer(reset);
+@import url(typography.css) layer(typography);
+@import url(hamburger.css) layer(hamburger);
+
+@layer init{
+
+  :root {
+    --primary: #F5821F;
+    --light: #FBFCFF;
+    --dark: #231F20;
+    --main-gap: 4rem;
+    background-color: var(--light);
+  }
+}
+
+@layer design{
+
+    body{
+    position: relative;
+    }
+}
