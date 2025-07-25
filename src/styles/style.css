@@ -24,6 +24,21 @@
       height: 40px;
     }
 
+    .img--responsive{
+      width: 100%;
+      height: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
     @media screen and (min-width: 1080px) {
         
       .logo img{
@@ -31,10 +46,12 @@
       }
       .hamburger-nav ul {
         display: flex;
-        gap: 1em;
+        gap: 2em;
       }
       .hamburger-nav a {
         color: var(--light);
       }
+
+
     }
 }
