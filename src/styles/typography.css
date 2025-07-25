@@ -17,3 +17,6 @@ li a{
 header a, li a{
     font-size: 1.25rem;
 }
+li{
+    list-style: none;
+}
