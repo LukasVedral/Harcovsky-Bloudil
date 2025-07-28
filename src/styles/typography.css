@@ -24,7 +24,7 @@ h2, .header--index p{
 li a{
     color: black;
 }
-header a, li a{
+header a, li a, .btn{
     font-size: 1.25rem;
 }
 li{
@@ -38,9 +38,9 @@ ul{
     font-size: 0.625rem;
     color: var(--gray);
 }
-.timer__text p, .countdown__item--num{
+.timer__text p, .countdown__item--num, .sign-in__text{
     font-family: "Anton", sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
-    line-height: 92%;
+    line-height: 95%;
 }
