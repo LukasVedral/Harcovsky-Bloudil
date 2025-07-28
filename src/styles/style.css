@@ -31,6 +31,38 @@
     }
 
 
+    /*header*/
+    .header--index{
+      position: relative;
+      height: 70vh;
+      overflow: hidden;
+      color: white;
+    }
+    .header--index .hamburger-row{
+      background-color: #231F20BF;
+    }
+    .header__bg{
+      height: 70vh;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .header--index h1 , .header--index p{
+      position: absolute;
+      left: 16px;
+    }
+    .header--index h1{
+      top: 35%;
+    }
+    .header--index p{
+      top: 65%;
+    }
+
+
 
 
     /*footer*/
@@ -141,7 +173,13 @@
 
 
     @media screen and (min-width: 1080px) {
-        
+        .hamburger-nav {
+            position: absolute;
+            top: 37px;
+            right: 20px;
+        }
+
+
       .logo img{
         height: 64px;
       }

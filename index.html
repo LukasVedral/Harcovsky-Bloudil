@@ -9,39 +9,72 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="./src/styles/style.css">
+
 </head>
 <body>
-  <header class="hamburger-zone header--index"> 
-          <div class="hamburger-row hamburger-zone ">
+  <div class="header">
+    <header class="hamburger-zone header--index"> 
+        <img class="header__bg" src="/images/index-bg.avif" alt="Harcovský bloudil - obrázek závodu">
+            <div class="hamburger-row hamburger-zone ">
+              <a class="logo" href="/index.html">
+                <img src="/logo-light.svg" alt="Harcovský bloudil logo">
+              </a>
+              <a href="/index.html">Harcovský Bloudil</a>
             
-            <a class="logo" href="/index.html">
-              <img src="/logo-light.svg" alt="Harcovský bloudil logo">
-              
-            </a>
-            <a href="/index.html">Harcovský Bloudil</a>
-            
+              <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                  <div class="spans"><span></span><span></span></div>
+                  <div class="spans"><span></span><span></span></div>
+                  <div class="spans"><span></span><span></span></div>
+              </a>
+          </div>
+          <nav class="hamburger-nav hamburger-zone">
+              <ul>
+                  <li><a class="menu__item" href="/about.html">O Závodu</a></li>
+                  <li><a class="menu__item" href="/years.html">Ročníky</a></li>
+                  <li><a class="menu__item" href="/proposition.html">Propozice</a></li>
+                  <li><a class="menu__item" href="/applications.html">Přihlásky</a></li>
+                  <li><a class="menu__item" href="/gallery.html">Galerie</a></li>
+                  <li><a class="menu__item" href="/contact.html">Kontakt</a></li>
+              </ul>
+          </nav>
+          <h1>Harcovský Bloudil</h1>
+          <p>Večerní orientační závod v srdci Liberce</p>
+    </header>
+    <div class="header__info">
 
-            <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
-                <div class="spans"><span></span><span></span></div>
-                <div class="spans"><span></span><span></span></div>
-                <div class="spans"><span></span><span></span></div>
-            </a>
+      <div class="header__timer">
+        <div class="timer__text">
+          <p class="timer__date">LIS 5. 2025</p>
         </div>
-        <nav class="hamburger-nav hamburger-zone">
-            <ul>
-                <li><a class="menu__item" href="/about.html">O Závodu</a></li>
-                <li><a class="menu__item" href="/years.html">Ročníky</a></li>
-                <li><a class="menu__item" href="/proposition.html">Propozice</a></li>
-                <li><a class="menu__item" href="/applications.html">Přihlásky</a></li>
-                <li><a class="menu__item" href="/gallery.html">Galerie</a></li>
-                <li><a class="menu__item" href="/contact.html">Kontakt</a></li>
-            </ul>
-        </nav>
-    
-  </header>
+        <div class="timer__countdown">
+
+          <div class="countdown__item">
+            <span class="countdown__item--num" id="days">00</span> dní
+          </div>
+
+          <div class="countdown__item">
+            <span class="countdown__item--num" id="hours">00</span> hodin          
+          </div>
+
+          <div class="countdown__item">
+            <span class="countdown__item--num" id="minutes">00</span> minut
+          </div>
+
+          <div class="countdown__item">
+            <span class="countdown__item--num" id="seconds">00</span> sekund
+          </div>
+
+        </div>
+      </div>
+
+      <div class="btn btn--sign-in">
+        Přihlásit se
+      </div>
+    </div>
+  </div>
   
   <main>
     <br>

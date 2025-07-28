@@ -1,17 +1,12 @@
-.hamburger-zone{
-    display: flex;
-    align-items: center;
-    background-color: var(--dark);
-    justify-content: space-between;
-    padding: 0 2rem;
-}
 .hamburger-row {
-    height: 80px;
-    padding: 0;
+    height: 100px;
+    padding: 0 1.25em;
+    background-color:var(--dark);
     display: flex;
     align-items: center;
-    border-bottom: var(--text-light) solid 1px;
+    
 }
+
 .header--index .hamburger-row{
     border: none;
 }
@@ -19,6 +14,14 @@
     margin: 0;
     padding: 0;
 
+}
+.hamburger-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.hamburger-nav li {
+    text-align: center;
+    padding: 0;
 }
 
 
@@ -35,10 +38,6 @@
     }
     .hamburger-nav {
         background-color:var(--light);
-    }
-    .hamburger-nav ul {
-        margin: 0;
-        padding: 0;
     }
     .hamburger-nav li {
         display: block;
