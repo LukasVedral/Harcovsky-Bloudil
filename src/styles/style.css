@@ -33,17 +33,40 @@
 
     .btn{
       display: inline-block;
-      background-color: var(--primary);
       transition: background-color 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn--control{
+      padding: .5rem 1rem;
+      color: black;
+      border: #231F20 2px solid;
+      border-radius: 12px;
+    }
+    .btn--control:hover .btn__fill{
+      display: block;
+
+
+    }
+    .btn__fill{
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      z-index: -1;
     }
 
     .btn--primary{
       padding: .75rem 1.5rem;
+      background-color: var(--primary);
     }
     .primary--light:hover{
       background-color: var(--light);
       color: black;
     }
+
+
 
     .sign-in__text{
       display: none;
@@ -272,11 +295,95 @@
     }
 
 
+    .main__winners{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .winners__container{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+    }
+
+    .winners__podium{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .winners{
+      display: flex;
+      gap: 1rem;
+      align-items: end;
+      width: 80%;
+    }
+    .winner{
+      text-align: center;
+      flex: 1;
+
+    }
+    .podium{
+      background-image: linear-gradient(to bottom, #8F8E8F 0%, var(--dark) 80%); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .podium--first{
+      aspect-ratio: 1/2.5;
+    }
+    .podium--second{
+      aspect-ratio: 1/1.75;
+    }
+    .podium--third{
+      aspect-ratio: 1/1;
+    }
+
+    .podium__place{
+      color: white;
+      font-size: 1.75rem;
+      font-weight: 600;
+      
+    }
+    .results{
+      display: flex;
+      width: 80%;
+      justify-content: center;
+      background-color: var(--dark);
+      padding: .5rem 0;
+    }
+
+    .winners__icon{
+      position: absolute;
+      bottom: 0;
+      width: 80%;
+    }
 
 
 
 
+    .main__container > .main__info{
+      flex-direction: row;
+      align-items: stretch;
+    }
 
+    .info__item{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      border: var(--dark) 1px solid;
+      padding: .75rem .5rem;
+      
+    }
+
+    .info__item p{
+      color: var(--primary);
+      text-align: center;
+    }
 
 
 
