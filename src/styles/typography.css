@@ -7,7 +7,7 @@ a,p,li,span{
     font-family: "Space Grotesk", sans-serif;
     margin: 0;
 }
-h1,h2,h3,.info__title{
+h1,h2,h3,.info__title, .date__time{
     font-family: "Montserrat", sans-serif;
     margin: 0;
 }
