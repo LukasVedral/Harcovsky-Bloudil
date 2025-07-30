@@ -264,6 +264,7 @@
       width: 100%;
     }
 
+
     .main__props header{
       display: flex;
       gap: 1rem;
@@ -300,6 +301,9 @@
       flex-direction: column;
       gap: 2rem;
     }
+    .main__winners header{
+      margin-bottom: 2.5rem;
+    }
 
     .winners__container{
       display: flex;
@@ -312,7 +316,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex: 1;
     }
+
     .winners{
       display: flex;
       gap: 1rem;
@@ -322,7 +328,13 @@
     .winner{
       text-align: center;
       flex: 1;
+      position: relative;
 
+    }
+    .winner > p{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(-105%);
     }
     .podium{
       background-image: linear-gradient(to bottom, #8F8E8F 0%, var(--dark) 80%); 
@@ -448,5 +460,50 @@
       .sponsors__logo{
         width: 128px;
       }
+
+      .main__container{
+        margin: 4rem;
+        max-width: 1200px;
+      }
+
+
+      /*main*/
+
+      .main__about{
+        gap: 1.5rem;
+      }
+      .main__about header{
+        position: relative;
+      }
+      .main__about img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 182px;
+        height: 182px;
+      }
+
+      .main__about p{
+        margin-right: 182px;
+      }
+      .main__container > .main__props{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 0 8rem;
+      }
+
+
+      .main__container > .main__winners{
+        align-items: start;
+      }
+
+      .winners__container{
+        flex-flow: row nowrap;
+        align-items: stretch; 
+        
+      }
+
+      
     }
 }
