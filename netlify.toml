@@ -3,7 +3,7 @@
     publish = "dist"
 [[redirects]]
   from = "/admin"
-  to = "/admin/admin.html"
+  to = "/admin/index.html"
   status = 200
 
 [[redirects]]
