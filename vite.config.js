@@ -16,7 +16,6 @@ export default defineConfig({
                 gallery: resolve(__dirname, 'src/gallery.html'),
                 proposition: resolve(__dirname, 'src/proposition.html'),
                 years: resolve(__dirname, 'src/years.html'),
-                admin: resolve(__dirname, 'src/admin/index.html'),
             }
         }
     }
