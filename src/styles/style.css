@@ -84,6 +84,9 @@
     .header--index .hamburger-row{
       background-color: #231F20BF;
     }
+    .header--index .hamburger-row.active{
+      background-color: var(--dark);
+    }
     .header__bg{
       height: 70vh;
       position: absolute;
@@ -244,6 +247,7 @@
       display: flex;
       flex-direction: column;
       gap: 4rem;
+      position: relative;
     }
     .main__container{
       margin: 5rem 1rem;
@@ -449,6 +453,12 @@
       gap: 1rem;
     }
 
+    .time{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
     .description__categories{
       grid-area: category;
     }
@@ -500,6 +510,8 @@
       flex-direction: column;
       gap: .5rem;
     }
+
+
 
 
 
@@ -607,6 +619,33 @@
         
       }
 
+      
+
+      /*about*/
+
+
+      .main__container > .about__description{
+        grid-template-columns: 1fr 141px;
+        grid-gap: 8rem 4rem;
+        grid-template-areas: 
+        "desc category"
+        "times category"
+        "penalty . "
+        ;
+      }
+
+
+      .description__times{
+        flex-direction: row;
+      }
+      .description__penalty{
+        width: 50%;
+      }
+      .about__equipment{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
       
     }
 }
